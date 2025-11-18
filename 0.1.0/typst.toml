@@ -1,0 +1,7 @@
+[package]
+name = "lecture"
+version = "0.1.0"
+entrypoint = "src/lib.typ"
+authors = ["Sirius Chan"]
+license = "AGPL-v3"
+description = ""
