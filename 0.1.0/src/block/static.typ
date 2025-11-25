@@ -21,7 +21,9 @@
 
 #let theorem(name, body, title: "Theorem") = def(title: title + ": " + name, body)
 #let lemma(name, body, title: "Lemma") = def(title: title + ": " + name, body)
-#let prop(title: "Proposition", body) = def(title: title, body)
+#let propos(title: "Proposition", body) = def(title: title, body)
+#let missing(title: "Missing", body) = def(title: title, body)
+#let informal(title: "Informal", body) = def(title: title, body)
 
 #let tab1(header1, ..body) = table(
   columns: (auto),
@@ -40,3 +42,12 @@
   gutter: gutter,
   ..body
 )
+
+#let surround(body) = {
+  block(
+    stroke: black,
+    inset: 8pt,
+  )[
+    #body
+  ]
+}

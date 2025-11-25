@@ -4,7 +4,8 @@
   cdots : "⋯",
   vdots : "⋮",
   int : "∫",
-  eq : "≡",
+  intdouble: "∬",
+  eqv : "≡",
   imp : "⟹",
   iff : "⟺",
   oif : "⟸",
@@ -13,6 +14,9 @@
   leq : "≤",
   geq : "≥",
   tick : "✓",
+  nat : "ℕ",
+  real : "ℝ",
+  whole : "ℤ",
 )
 
 #let to = symbol(
@@ -29,10 +33,11 @@
 
 #let int = symbol(
   _symbmap.int,
+  ("two", _symbmap.intdouble)
 )
 
-#let eq = symbol(
-  _symbmap.eq,
+#let eqv = symbol(
+  _symbmap.eqv,
 )
 
 #let imp = symbol(
@@ -69,4 +74,16 @@
 
 #let tick = symbol(
   _symbmap.tick
+)
+
+#let nat = symbol(
+  _symbmap.nat
+)
+
+#let real = symbol(
+  _symbmap.real
+)
+
+#let whole = symbol(
+  _symbmap.whole
 )
