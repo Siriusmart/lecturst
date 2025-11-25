@@ -37,6 +37,12 @@
   ..body
 )
 
+#let tab3(header1, header2, header3, ..body) = table(
+  columns: (auto, auto, auto),
+  table.header([*#header1*], [*#header2*], [*#header3*]),
+  ..body
+)
+
 #let grid2(gutter: 20pt, width: auto, ..body) = grid(
   columns: (width, auto),
   gutter: gutter,
