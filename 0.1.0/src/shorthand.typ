@@ -41,3 +41,5 @@
 #let quo = $"quo"$
 
 #let cd = $"cd"$
+#let CD = $"CD"$
+#let GCD = $"GCD"$

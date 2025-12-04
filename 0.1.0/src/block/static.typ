@@ -24,6 +24,7 @@
 #let propos(title: "Proposition", body) = def(title: title, body)
 #let missing(title: "Missing", body) = def(title: title, body)
 #let informal(title: "Informal", body) = def(title: title, body)
+#let coro(title: "Corollary", body) = def(title: title, body)
 
 #let tab1(header1, ..body) = table(
   columns: (auto),
@@ -43,8 +44,20 @@
   ..body
 )
 
+#let tab4(header1, header2, header3, header4, ..body) = table(
+  columns: (auto, auto, auto, auto),
+  table.header([*#header1*], [*#header2*], [*#header3*], [*#header4*]),
+  ..body
+)
+
 #let grid2(gutter: 20pt, width: auto, ..body) = grid(
   columns: (width, auto),
+  gutter: gutter,
+  ..body
+)
+
+#let grid3(gutter: 20pt, width1: auto, width2: auto, ..body) = grid(
+  columns: (width1, width2, auto),
   gutter: gutter,
   ..body
 )

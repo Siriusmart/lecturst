@@ -17,6 +17,9 @@
   nat : "ℕ",
   real : "ℝ",
   whole : "ℤ",
+  rat: "ℚ",
+  Union: "⋃",
+  Inter: "⋂",
 )
 
 #let to = symbol(
@@ -86,4 +89,16 @@
 
 #let whole = symbol(
   _symbmap.whole
+)
+
+#let rat = symbol(
+  _symbmap.rat
+)
+
+#let Union = symbol(
+  _symbmap.Union
+)
+
+#let Inter = symbol(
+  _symbmap.Inter
 )
