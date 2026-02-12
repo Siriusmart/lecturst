@@ -50,6 +50,12 @@
   ..body
 )
 
+#let tab5(header1, header2, header3, header4, header5, ..body) = table(
+  columns: (auto, auto, auto, auto, auto),
+  table.header([*#header1*], [*#header2*], [*#header3*], [*#header4*], [*#header5*]),
+  ..body
+)
+
 #let grid2(gutter: 20pt, width: auto, ..body) = grid(
   columns: (width, auto),
   gutter: gutter,

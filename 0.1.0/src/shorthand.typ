@@ -20,6 +20,7 @@
 #let du = $d u$
 #let dv = $d v$
 #let dr = $d r$
+#let dt = $d t$
 
 #let df = $d f$
 #let dF = $d F$
@@ -43,3 +44,7 @@
 #let cd = $"cd"$
 #let CD = $"CD"$
 #let GCD = $"GCD"$
+
+#let argmax = $limits("argmax ")$
+
+#let abracket(..E) = $chevron.l #E.pos().join([,]) chevron.r$

@@ -17,9 +17,18 @@
   nat : "ℕ",
   real : "ℝ",
   whole : "ℤ",
+  quat: "ℍ",
   rat: "ℚ",
+  complex: "ℂ",
   Union: "⋃",
   Inter: "⋂",
+  binop: "⊕",
+  binopalt: "⊗",
+  pm: "±",
+  iso: "≅",
+  relate: "ℛ︀",
+  normsub: "◃",
+  pset: "𝒫︀"
 )
 
 #let to = symbol(
@@ -95,10 +104,43 @@
   _symbmap.rat
 )
 
+#let complex = symbol(
+  _symbmap.complex
+)
+
+#let quat = symbol(
+  _symbmap.quat
+)
+
 #let Union = symbol(
   _symbmap.Union
 )
 
 #let Inter = symbol(
   _symbmap.Inter
+)
+
+#let binop = symbol(
+  _symbmap.binop,
+  ("alt", _symbmap.binopalt)
+)
+
+#let pm = symbol(
+  _symbmap.pm
+)
+
+#let iso = symbol(
+  _symbmap.iso
+)
+
+#let relate = symbol(
+  _symbmap.relate
+)
+
+#let normsub = symbol(
+  _symbmap.normsub
+)
+
+#let pset = symbol(
+  _symbmap.pset
 )
