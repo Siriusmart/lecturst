@@ -28,7 +28,9 @@
   iso: "≅",
   relate: "ℛ︀",
   normsub: "◃",
-  pset: "𝒫︀"
+  pset: "𝒫︀",
+  surject: "↠",
+  inject: "↣"
 )
 
 #let to = symbol(
@@ -143,4 +145,12 @@
 
 #let pset = symbol(
   _symbmap.pset
+)
+
+#let surject = symbol(
+  _symbmap.surject
+)
+
+#let inject = symbol(
+  _symbmap.inject
 )

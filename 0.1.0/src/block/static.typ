@@ -9,12 +9,14 @@
   ]
 }
 
+#let intuition(title: "Intuition", body) = def(title: title, body)
+
 #let defs(title: "Definitions", body) = def(title: title, body)
 
 #let defstable(title: "Definitions", ..content) = def(title: title, table(
   columns: (auto, auto),
   table.header([*Keyword*], [*Definition*]),
-  .. content
+  ..content,
 ))
 
 #let note(title: "Note", body) = def(title: title, body)
@@ -27,33 +29,33 @@
 #let coro(title: "Corollary", body) = def(title: title, body)
 
 #let tab1(header1, ..body) = table(
-  columns: (auto),
+  columns: auto,
   table.header([*#header1*]),
-  ..body
+  ..body,
 )
 
 #let tab2(header1, header2, ..body) = table(
   columns: (auto, auto),
   table.header([*#header1*], [*#header2*]),
-  ..body
+  ..body,
 )
 
 #let tab3(header1, header2, header3, ..body) = table(
   columns: (auto, auto, auto),
   table.header([*#header1*], [*#header2*], [*#header3*]),
-  ..body
+  ..body,
 )
 
 #let tab4(header1, header2, header3, header4, ..body) = table(
   columns: (auto, auto, auto, auto),
   table.header([*#header1*], [*#header2*], [*#header3*], [*#header4*]),
-  ..body
+  ..body,
 )
 
 #let tab5(header1, header2, header3, header4, header5, ..body) = table(
   columns: (auto, auto, auto, auto, auto),
   table.header([*#header1*], [*#header2*], [*#header3*], [*#header4*], [*#header5*]),
-  ..body
+  ..body,
 )
 
 #let grid2(gutter: 20pt, width: auto, ..body) = grid(
@@ -76,3 +78,5 @@
     #body
   ]
 }
+
+#let quadd = h(5em)
