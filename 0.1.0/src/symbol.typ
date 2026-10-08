@@ -30,7 +30,8 @@
   normsub: "◃",
   pset: "𝒫︀",
   surject: "↠",
-  inject: "↣"
+  inject: "↣",
+  rel: "↛",
 )
 
 #let to = symbol(
@@ -153,4 +154,8 @@
 
 #let inject = symbol(
   _symbmap.inject
+)
+
+#let rel = symbol(
+  _symbmap.rel
 )
